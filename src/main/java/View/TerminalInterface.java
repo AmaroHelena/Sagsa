@@ -18,11 +18,11 @@ public class TerminalInterface {
         System.out.print("Digite o código da Capacidade (Ex: UC3-02): ");
         String codigoInput = scanner.nextLine();
 
-        // Solicita processamento isolado ao subsistema core
+        
         String resultadoFinal = coreEngine.processarEstrategiaDocente(codigoInput);
         System.out.println("\n" + resultadoFinal);
 
-        // NOTA: Removi o scanner.close() para evitar fechar o System.in acidentalmente
+        
     }
 }
 
